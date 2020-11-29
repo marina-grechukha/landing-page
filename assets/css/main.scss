@@ -5,16 +5,15 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  //font-size: 16px;
+  font-size: 16px;
 }
 
 .header {
   background: transparent no-repeat 50% 0 url("../img/cat-1.jpg");
-  background-size: 100%;
+  background-size: cover;
 
   .title {
-    margin-top: 10%;
-    padding-bottom: 10%;
+    padding: 10% 0;
 
     h1 {
       font-weight: 800;
@@ -40,23 +39,9 @@ body {
 }
 
 .navigation {
-  text-align: right;
-  position: relative;
-  padding-right: 20%;
-
-  .background {
-    background: #111;
-    opacity: 0.25;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-  }
-  ul {
-    position: relative;
-    margin: 0;
-  }
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
 
   .navigation-link {
     padding: 2rem 1rem;
@@ -88,6 +73,8 @@ body {
   }
 
   .item {
+    display: flex;
+
     h5 {
       font-weight: 600;
     }
