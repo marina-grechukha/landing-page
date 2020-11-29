@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+* {
+  --navigation-height: 6rem;
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -28,6 +31,14 @@ body {
   padding: 0;
 }
 
+.background {
+  background: #111;
+  opacity: 0.25;
+  position: absolute;
+  height: var(--navigation-height);
+  width: 100%;
+}
+
 .navigation {
   text-align: right;
   position: relative;
@@ -47,15 +58,14 @@ body {
     margin: 0;
   }
 
-  li {
-    list-style: none;
-    display: inline-block;
+  .navigation-link {
+    padding: 2rem 1rem;
+    vertical-align: center;
+    height: var(--navigation-height);
 
     a {
-      display: block;
       font-size: 1.125rem;
       color: #fff;
-      padding: 2rem 1rem;
       text-decoration: none;
     }
   }
