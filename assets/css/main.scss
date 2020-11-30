@@ -24,6 +24,10 @@
 .color-secondary {
   color: #999;
 }
+
+.color-primary {
+  color: #4985FF;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -134,6 +138,23 @@ h2 {
   }
 }
 
+.bg-purple {
+  background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
+  height: 30rem;
+}
+.works {
+  .works-items {
+    border-bottom: #E0E0E0 solid 2px;
+
+    a {
+      text-decoration-line: underline;
+    }
+
+    img {
+      border-radius: 10px;
+    }
+  }
+}
 
 
 
