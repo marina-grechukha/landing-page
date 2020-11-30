@@ -29,17 +29,12 @@ body {
   font-size: 16px;
 }
 
-.header {
-  background: transparent no-repeat 50% 0 url("../img/cat-1.jpg");
-  background-size: cover;
+h2 {
+  line-height: 1.5;
+}
 
-  .title {
-    padding: 10% 0;
-
-    h1 {
-      font-size: 3rem;
-    }
-  }
+.bg-gray {
+  background-color: #F6F6F8;
 }
 
 .btn {
@@ -58,26 +53,38 @@ body {
   width: 100%;
 }
 
-.navigation {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 10rem;
+.header {
+  background: transparent no-repeat 50% 0 url("../img/cat-1.jpg");
+  background-size: cover;
 
-  .navigation-link {
-    padding: 2rem 1rem;
-    vertical-align: center;
-    height: var(--navigation-height);
+  .title {
+    padding: 10% 0;
 
-    a {
-      font-size: 1.125rem;
-      color: #fff;
-      text-decoration: none;
+    h1 {
+      font-size: 3rem;
     }
   }
-  .active {
-    border-bottom: #fff solid 2px;
-  }
 
+  .navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10rem;
+
+    .navigation-link {
+      padding: 2rem 1rem;
+      vertical-align: center;
+      height: var(--navigation-height);
+
+      a {
+        font-size: 1.125rem;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+    .active {
+      border-bottom: #fff solid 2px;
+    }
+  }
 }
 
 .services {
@@ -93,6 +100,40 @@ body {
     }
   }
 }
+
+.about {
+  .about-block {
+    padding: 6rem 0;
+    border-bottom: #E0E0E0 solid 2px;
+    display: flex;
+
+    .about-text {
+      align-self: center;
+
+      a {
+        text-decoration-line: underline;
+      }
+    }
+
+    img {
+      max-width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+    }
+  }
+
+  .about-statistic {
+    display: flex;
+    justify-content: space-around;
+
+    .number {
+      display: flex;
+      justify-content: center;
+      font-size: 2.25rem;
+    }
+  }
+}
+
 
 
 
