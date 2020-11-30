@@ -4,22 +4,92 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>LP</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/main.scss">
 </head>
 <body>
 
-<header class="header">
-  <nav class="nav justify-content-end">
-    <a class="nav-link active" href="#">Главная</a>
-    <a class="nav-link" href="#">Наши проекты</a>
-    <a class="nav-link" href="#">Услуги</a>
-    <a class="nav-link" href="#">Новости</a>
-    <a class="nav-link" href="#">Контакты</a>
-  </nav>
-  <img src="./assets/img/cat-1.jpg" alt="">
-</header>
+<div class="background"></div>
+<div class="container-fluid header">
+
+  <div class="row">
+    <div class="navigation col text-white">
+      <div class="navigation-link active">
+        <a href="#">Главная</a>
+      </div>
+      <div class="navigation-link">
+        <a href="#">Наши проекты</a>
+      </div>
+      <div class="navigation-link">
+        <a href="#">Услуги</a>
+      </div>
+      <div class="navigation-link">
+        <a href="#">Новости</a>
+      </div>
+      <div class="navigation-link">
+        <a href="#">Контакты</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="title col-6 offset-3 text-white text-center">
+      <div class="mb-3">Передовая IT студия</div>
+      <h1 class="mb-5 fw-800">Мы создаем легкие решения сложных задач и проблем</h1>
+      <a class="btn btn-primary mb-3" href="#" role="button">Наши проекты</a>
+    </div>
+  </div>
+
+</div>
+
+<!--services---------------------------->
+
+<div class="container services">
+
+  <div class="row">
+    <div class="col col-8 offset-2 text-center">
+      <h2 class="mb-4 fw-700">Мы создаем мобильные приложения для крупных корпораций</h2>
+      <p class="mb-5 color-secondary">
+        Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне.
+        Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. </p>
+    </div>
+  </div>
+
+  <div class="row mb-5">
+    <div class="item col-4">
+      <div class="icon mr-3"><img class="icon" src="/assets/icons/project.svg" alt=""></div>
+      <div class="pt-5">
+        <h5 class="fw-600">Создание сайтов</h5>
+        <p class="description color-secondary">Lorem Ipsum - это текст- "рыба", часто используе в печати и вэб-дизайне.</p>
+      </div>
+    </div>
+
+    <div class="item col-4">
+      <div class="icon mr-3"><img class="icon" src="/assets/icons/project.svg" alt=""></div>
+      <div class="pt-5">
+        <h5 class="fw-600">Создание сайтов</h5>
+        <p class="description color-secondary">Lorem Ipsum - это текст-"рыба", часто используе в печати и вэб-дизайне.</p>
+      </div>
+    </div>
+
+    <div class="item col-4">
+      <div class="icon mr-3"><img class="icon" src="/assets/icons/project.svg" alt=""></div>
+      <div class="pt-5">
+        <h5 class="fw-600">Создание сайтов</h5>
+        <p class="description color-secondary">Lorem Ipsum - это текст-"рыба", часто используе в печати и вэб-дизайне.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col text-center">
+      <a class="btn btn-primary" href="#" role="button">Все услуги</a>
+    </div>
+  </div>
+
+</div>
 
 </body>
 </html>
+
