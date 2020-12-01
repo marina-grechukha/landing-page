@@ -168,5 +168,22 @@ h2 {
   }
 }
 
+.video {
+  background: transparent no-repeat 50% 0 url("../img/cat-11.jpg");
+  background-size: 100%;
+
+  .video-frame {
+    position: relative;
+
+    .video-play {
+      position: absolute;
+      border: white solid 1px;
+      border-radius: 50px;
+    }
+    img {
+      border-radius: 10px;
+    }
+  }
+}
 
 
