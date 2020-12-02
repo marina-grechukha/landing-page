@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
 * {
   --navigation-height: 6rem;
 }
@@ -28,6 +29,15 @@
 .color-primary {
   color: #4985FF;
 }
+
+.text-small {
+  font-size: 0.9rem;
+}
+
+.text-medium {
+  font-size: 1.125rem;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -41,7 +51,7 @@ h2 {
   background-color: #F6F6F8;
 }
 
-.btn {
+.button-fixed-width {
   border-radius: 30px;
   width: 200px;
   height: 45px;
@@ -85,6 +95,7 @@ h2 {
         text-decoration: none;
       }
     }
+
     .active {
       border-bottom: #fff solid 2px;
     }
@@ -144,6 +155,7 @@ h2 {
   height: 30rem;
   width: 100%;
 }
+
 .works {
   position: relative;
 
@@ -180,10 +192,65 @@ h2 {
       border: white solid 1px;
       border-radius: 50px;
     }
+
     img {
       border-radius: 10px;
     }
   }
 }
 
+.subscribe {
+  margin-top: 5rem;
+  border-top: #E0E0E0 solid 2px;
 
+  .subscribe-input {
+    padding-left: 2rem;
+    box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px 0 0 30px;
+  }
+
+  .subscribe-btn {
+    box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+    border-radius: 30px;
+    height: 45px;
+  }
+}
+
+.footer {
+  ul {
+    padding-left: 1.5rem;
+
+    li {
+      padding-inline-start: 0.5rem;
+      line-height: 3;
+
+      a {
+        color: inherit;
+      }
+    }
+
+    li.email {
+      list-style-image: url(/assets/icons/envelope.svg);
+    }
+
+    li.phone {
+      list-style-image: url(/assets/icons/call.svg);
+    }
+
+    li.address {
+      list-style-image: url(/assets/icons/placeholder.svg);
+    }
+  }
+
+  ul.list {
+    padding-left: 1rem;
+
+    li {
+      list-style-image: url(/assets/icons/arrow.svg);
+    }
+  }
+
+  .footer-rights {
+    border-top: #E0E0E0 solid 2px;
+  }
+}
