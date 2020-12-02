@@ -167,6 +167,7 @@ h2 {
     }
 
     img {
+      max-width: 100%;
       border-radius: 10px;
     }
   }
@@ -177,12 +178,12 @@ h2 {
 
   img {
     border-radius: 10px;
+    max-width: 100%;
   }
 }
 
 .video {
   background: transparent no-repeat 50% 0 url("../img/cat-11.jpg");
-  background-size: 100%;
 
   .video-frame {
     position: relative;
@@ -195,6 +196,7 @@ h2 {
 
     img {
       border-radius: 10px;
+      max-width: 100%;
     }
   }
 }
