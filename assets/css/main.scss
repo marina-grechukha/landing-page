@@ -59,6 +59,20 @@ h2 {
   padding: 0;
 }
 
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-50px);
+  }
+
+  80% {
+    transform: translateY(-20px);
+  }
+}
+
 .background {
   background: #111;
   opacity: 0.25;
@@ -113,8 +127,20 @@ h2 {
   margin-top: 5%;
   margin-bottom: 5%;
 
+  h2 {
+    transition: 1s;
+  }
+
+  h2:hover {
+    transform: rotate(-360deg);
+  }
+
   .item {
     display: flex;
+
+    img:hover {
+      animation: bounce 2s;
+    }
 
     .description {
       font-size: 0.9rem;
@@ -132,6 +158,14 @@ h2 {
     .about-text {
       align-self: center;
 
+      h2 {
+        transition: 2s;
+      }
+
+      h2:hover {
+        transform: translate3d(20px, 20px, 100px) rotate3d(1, 1, 1, -90deg);
+      }
+
       a {
         text-decoration-line: underline;
       }
@@ -141,6 +175,11 @@ h2 {
       width: 100%;
       border-radius: 30px;
       box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
+      transition: 2s;
+    }
+
+    img:hover {
+      transform: rotate3d(1, 1, 1, 30deg);
     }
   }
 
@@ -152,6 +191,11 @@ h2 {
       display: flex;
       justify-content: center;
       font-size: 2.25rem;
+      transition: 1s;
+    }
+
+    .number:hover {
+      transform: scale(2);
     }
   }
 }
@@ -176,6 +220,11 @@ h2 {
     img {
       width: 100%;
       border-radius: 10px;
+      transition: 1s;
+    }
+
+    img:hover {
+      transform: perspective(300px) rotateX(-45deg);
     }
   }
 }
@@ -186,6 +235,11 @@ h2 {
   img {
     border-radius: 10px;
     width: 100%;
+    transition: 1s ease;
+  }
+
+  img:hover {
+    transform: skew(-10deg);
   }
 }
 
