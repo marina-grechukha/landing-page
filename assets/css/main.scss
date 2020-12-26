@@ -132,7 +132,7 @@ h2 {
   }
 
   h2:hover {
-    transform: rotate(-360deg);
+    transform: scale(1.2);
   }
 
   .item {
@@ -158,14 +158,6 @@ h2 {
     .about-text {
       align-self: center;
 
-      h2 {
-        transition: 2s;
-      }
-
-      h2:hover {
-        transform: translate3d(20px, 20px, 100px) rotate3d(1, 1, 1, -90deg);
-      }
-
       a {
         text-decoration-line: underline;
       }
@@ -174,12 +166,13 @@ h2 {
     img {
       width: 100%;
       border-radius: 30px;
-      box-shadow: 0 0 10px rgba(111, 111, 111, 0.25);
-      transition: 2s;
+      box-shadow: 0 0 10px rgba(111, 111, 111, 0.5);
+      transition: 0.5s ease-in-out;
     }
 
     img:hover {
-      transform: rotate3d(1, 1, 1, 30deg);
+      box-shadow: 0 0 30px rgba(111, 111, 111, 1);
+      transform: scale(1.1);
     }
   }
 
@@ -195,7 +188,7 @@ h2 {
     }
 
     .number:hover {
-      transform: scale(2);
+      transform: scale(1.5);
     }
   }
 }
@@ -203,7 +196,7 @@ h2 {
 .bg-purple {
   position: absolute;
   background: linear-gradient(90deg, #504DC2 20.44%, #5F12D0 80.91%), #C4C4C4;
-  height: 30rem;
+  height: 40%;
   width: 100%;
 }
 
@@ -220,11 +213,6 @@ h2 {
     img {
       width: 100%;
       border-radius: 10px;
-      transition: 1s;
-    }
-
-    img:hover {
-      transform: perspective(300px) rotateX(-45deg);
     }
   }
 }
@@ -235,11 +223,12 @@ h2 {
   img {
     border-radius: 10px;
     width: 100%;
-    transition: 1s ease;
+    transition: 0.5s ease-in-out;
   }
 
   img:hover {
-    transform: skew(-10deg);
+    box-shadow: 0 0 20px rgba(111, 111, 111, 1);
+    transform: scale(1.1);
   }
 }
 
@@ -379,7 +368,17 @@ h2 {
   .services {
     h2 {
       font-size: 1.5rem;
+      text-wrap: none;
     }
+
+    .icon {
+      padding-top: 20px;
+      width: 70px;
+    }
+  }
+
+  .bg-purple {
+    height: 20%;
   }
 
   .footer {
